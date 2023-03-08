@@ -1,5 +1,5 @@
 # group-html
-Group Core GPA HTML project
+Core GPA HTML group project
 
 Assignment specs:
 
