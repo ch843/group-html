@@ -1,46 +1,125 @@
 <!DOCTYPE html>
-<!-- Cassidy Hardisty, Kira Coleman, Tiffany Zang, Ryan Hawkins, Grace Chou, Ella Cook -->
+<!-- Cassidy Hardisty, Kira Coleman, Tiffany Zang, Ryan Hawkins, Grace Chu, Ella Cook -->
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGPA</title>
+    <script>
+        //This function is called when the user clicks on the calcGPA button
+        function calcGPA()
+        {
+
+            //Extract the values from the HTML inputs by their assigned id and assigns them to variables
+            //The value extracted is converted from a string to a float/decimal
+            fIS201 = parseFloat(document.getElementById("is201Grade").value);
+            fACC200 = parseFloat(document.getElementById("acc200Grade").value);
+            fIS303= parseFloat(document.getElementById("is303Grade").value);
+            fOverallGPA = parseFloat(document.getElementById("overallGPA").value);
+            fLast30GPA = parseFloat(document.getElementById("last30GPA").value);
+            fEssay = parseInt(document.getElementById("essay").value);
+
+            //calculates new gpa
+            fFinalGPA = ((fIS201 * .3) + (fIS303 * .3) + (fACC200 * .05) + (fOverallGPA * .12) + (fLast30GPA * .18) + (fEssay * .05)).toFixed(2);
+
+            //Display the calculated GPA to the HTML label named "coreGPA"
+            document.getElementById("coreGPA").innerHTML = "Core GPA is " + fFinalGPA;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <fieldset style="width: 0px;" id="fdinfo">
+            <legend>Get your core GPA:  </legend>
+                <label for ="overallGPA">Overall GPA: </label>
+                <input type = "number" id = "overallGPA" step="0.1" autofocus>
+                <br><br>
+                <label for ="last30GPA">Last 30 Credits GPA: </label>
+                <input type = "number" id = "last30GPA" step="0.1" autofocus>
+                <br><br>
+
+                <label for ="acc200Grade">Acc 200 Grade: </label>
+                <!--<input list="listgrade" name="grade" id="acc200Grade">  -->
+                <select name="grade" id="acc200Grade">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="4.0">A</option>
+                    <option value="3.7">A-</option>
+                    <option value="3.4">B+</option>
+                    <option value="3.0">B</option>
+                    <option value="2.7">B-</option>
+                    <option value="2.0">C</option>
+                    <option value="1.7">C-</option>
+                    <option value="1.4">D+</option>
+                    <option value="1.0">D</option>
+                    <option value="0.7">D-</option>
+                    <option value="0">E</option>
+                </select>
+
+
+
+                
+                <br><br>
+                <label for ="is201Grade">IS 201 Grade: </label>
+               <!--<input list="listgrade" name="grade" id="is201Grade"> -->
+                <select name="grade" id="is201Grade">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="4.0">A</option>
+                    <option value="3.7">A-</option>
+                    <option value="3.4">B+</option>
+                    <option value="3.0">B</option>
+                    <option value="2.7">B-</option>
+                    <option value="2.0">C</option>
+                    <option value="1.7">C-</option>
+                    <option value="1.4">D+</option>
+                    <option value="1.0">D</option>
+                    <option value="0.7">D-</option>
+                    <option value="0">E</option>
+                </select>
+
+    
+
+                <br><br>
+                <label for ="is303Grade">IS 303 Grade: </label>
+               <!-- <input list="listgrade" name="grade" id="is303Grade"> -->
+                <select name="grade" id="is303Grade">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="4.0">A</option>
+                    <option value="3.7">A-</option>
+                    <option value="3.4">B+</option>
+                    <option value="3.0">B</option>
+                    <option value="2.7">B-</option>
+                    <option value="2.0">C</option>
+                    <option value="1.7">C-</option>
+                    <option value="1.4">D+</option>
+                    <option value="1.0">D</option>
+                    <option value="0.7">D-</option>
+                    <option value="0">E</option>
+                </select>
+
         
-        <link rel="stylesheet" href="index.css">
 
-        <script>
-            //This function is called when the user clicks on the calcGPA button
-            function calcGPA()
-            {
-                //Extract the values from the HTML inputs by their assigned id and assigns them to variables
-                //The value extracted is converted from a string to a float/decimal
-                fIS201 = parseFloat(document.getElementById("is201Grade").value);
-                fACC200 = parseFloat(document.getElementById("acc200Grade").value);
-                fIS303= parseFloat(document.getElementById("is303Grade").value);
-                fOverallGPA = parseFloat(document.getElementById("overallGPA").value);
-                fLast30GPA = parseFloat(document.getElementById("last30GPA").value);
-                fEssay = parseInt(document.getElementById("essay").value);
+                <br><br>
+                <label for ="essay">Essay Score: </label>
+                <select name="score" id="essay">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <br><br>
 
-                //calculates new gpa
-                fFinalGPA = ((fIS201 * .3) + (fIS303 * .3) + (fACC200 * .05) + (fOverallGPA * .12) + (fLast30GPA * .18) + (fEssay * .05)).toFixed(2);
 
-                //Display the calculated GPA to the HTML label named "coreGPA"
-                document.getElementById("coreGPA").innerHTML = "Core GPA is " + fFinalGPA;
-            }
-        </script>
-    </head>
-
-    <body>
-        <form>
-            <!--insert html tags --> 
-
-            <button type="button" onclick="calcGPA()">Calculate GPA</button>
-
-            <!--insert html tag for displaying the calcualted GPA --> 
-        </form>
-
-    </body>
-
+        <!--insert html tags --> 
+        <button type="button" onclick="calcGPA()">Calculate GPA</button>
+        <br><br>
+        <label>Result: </label>  
+        <p id = "coreGPA"></p>
+        <!--insert html tag for displaying the calcualted GPA --> 
+        </fieldset>
+    </form>
+</body>
 </html>
