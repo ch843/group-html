@@ -1,0 +1,11 @@
+fieldset {
+    width: 0px; 
+    background-color: lightblue; 
+    border-color: lightblue;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
