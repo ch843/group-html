@@ -61,6 +61,7 @@ h1 {
     right: 0;
   }
 
+  /*creating the background image*/
   body {
     background-image: url("Tanner.jpeg");
     background-size: cover;
