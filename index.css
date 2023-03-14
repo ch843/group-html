@@ -65,8 +65,6 @@ h1 {
 
 img {
   background-image: url("Tanner.jpeg"); /* The image used */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  opacity: 0.5
+  opacity: 0.5;
 }
