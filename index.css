@@ -5,7 +5,9 @@ fieldset {
     width: 100%;
     text-align: center;
     background-color: lightblue; 
-    border-color: lightblue;
+    border-color: black;
+    text-align: center;
+    
 }
 
 h1 {
@@ -21,7 +23,7 @@ h1 {
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: #1e62f4;
+    background-color: black;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -60,6 +62,7 @@ h1 {
     right: 0;
   }
 
+  /*creating the background image*/
   body {
     background-image: url("Tanner.jpeg");
     background-size: cover;
