@@ -62,9 +62,4 @@ h1 {
   body {
     background-image: url("Tanner.jpeg");
     background-size: cover;
-    background-color: #cccccc;
   }
-
-img {
-  opacity: 0.5;
-}
