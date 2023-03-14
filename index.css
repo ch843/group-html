@@ -59,12 +59,11 @@ h1 {
   }
 
   body {
-    background-image: url("Tanner.jpeg"), url("Tanner.jpeg");
+    background-image: url("Tanner.jpeg");
+    background-size: cover;
     background-color: #cccccc;
   }
 
 img {
-  background-image: url("Tanner.jpeg"); /* The image used */
-  background-size: cover; /* Resize the background image to cover the entire container */
   opacity: 0.5;
 }
