@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rampart+One&display=swap');
+
 fieldset {
-    width: 0px; 
+    width: 100%;
     background-color: lightblue; 
     border-color: black;
     text-align: center;
     
 }
 
+h1 {
+  font-family: 'Rampart One', cursive;
+}
 .content {
     display: flex;
     justify-content: center;
     height: 100vh;
+    font-family: 'Raleway', sans-serif;
 }
 
 .button {
@@ -19,9 +25,11 @@ fieldset {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
     padding: 20px;
-    width: 100px;
+    width: 310px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
