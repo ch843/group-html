@@ -1,7 +1,9 @@
 fieldset {
     width: 0px; 
     background-color: lightblue; 
-    border-color: lightblue;
+    border-color: black;
+    text-align: center;
+    
 }
 
 .content {
@@ -13,7 +15,7 @@ fieldset {
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: #1e62f4;
+    background-color: black;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -48,4 +50,16 @@ fieldset {
   .button:hover span:after {
     opacity: 1;
     right: 0;
+  }
+  body{
+    background-image: url(https://brightspotcdn.byu.edu/dims4/default/b8816f8/2147483647/strip/true/crop/5459x3567+0+0/resize/840x549!/quality/90/?url=https%3A%2F%2Fbrigham-young-brightspot.s3.amazonaws.com%2F0d%2Faf%2Ff5c9e6df45eea14f85f7b8e8cd1b%2F1277-byu-marriott-mba-ranked-by-princeton-review.jpg);
+    
+  }
+  .bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+
   }
