@@ -2,6 +2,7 @@
 
 fieldset {
     width: 100%;
+    text-align: center;
     background-color: lightblue; 
     border-color: black;
     text-align: center;
@@ -61,8 +62,8 @@ h1 {
   }
 
   body {
-    background-image: url("Tanner.jpeg"), url("Tanner.jpeg");
-    background-color: #cccccc;
+    background-image: url("Tanner.jpeg");
+    background-size: cover;
   }
 
  Tanner.jpeg {
