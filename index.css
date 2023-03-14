@@ -59,15 +59,17 @@ h1 {
     opacity: 1;
     right: 0;
   }
-  body{
-    background-image: url(https://brightspotcdn.byu.edu/dims4/default/b8816f8/2147483647/strip/true/crop/5459x3567+0+0/resize/840x549!/quality/90/?url=https%3A%2F%2Fbrigham-young-brightspot.s3.amazonaws.com%2F0d%2Faf%2Ff5c9e6df45eea14f85f7b8e8cd1b%2F1277-byu-marriott-mba-ranked-by-princeton-review.jpg);
-    
-  }
-  .bg{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
 
-
+  body {
+    background-image: url("Tanner.jpeg"), url("Tanner.jpeg");
+    background-color: #cccccc;
   }
+
+ Tanner.jpeg {
+  background-image: url("photographer.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
